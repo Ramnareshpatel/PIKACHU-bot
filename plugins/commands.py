@@ -10,8 +10,8 @@ logger = logging.getLogger(__name__)
 
 UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL", "")
 BOT_OWNER = int(os.environ["BOT_OWNER"])
-DATABASE_URL = os.environ["DATABASE_URL"]
-db = Database(DATABASE_URL, "FnCountryInfoBot")
+BC_URL = os.environ["BC_URL"]
+db = Database(BC_URL, "CB_movieRobot")
 
 
 Pikachu = ["https://telegra.ph/file/b5a11192ecd411b479494.jpg",
