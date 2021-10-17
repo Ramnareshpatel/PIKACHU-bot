@@ -9,14 +9,6 @@ from pyrogram.errors import UserNotParticipant
 from database import Database
 logger = logging.getLogger(__name__)
 
-UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL", "")
-BOT_OWNER = int(os.environ["BOT_OWNER"])
-BC_URL = os.environ["BC_URL"]
-db = Database(BC_URL, "CB_movieRobot")
-
-ADMIN_ID = "1287385877"
-
-
 Pikachu = ["https://telegra.ph/file/b5a11192ecd411b479494.jpg",
            "https://telegra.ph/file/d0d3199a7e79967dd4003.jpg",
            "https://telegra.ph/file/165e8d2680ba76017b1ed.jpg",
