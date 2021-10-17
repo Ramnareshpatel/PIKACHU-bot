@@ -219,6 +219,8 @@ async def delete(bot, message):
         await msg.edit('File not found in database')
 @Client.on_message(filters.command('about'))
 async def bot_info(bot, message):
+    if not await db.is_user_exist(update.from_user.id):
+	    await db.add_user(update.from_user.id)
     buttons = [
         [                   
             InlineKeyboardButton('💜૦ωՈ૯Ր💜', url='https://t.me/Peace_fighter_No1'),
