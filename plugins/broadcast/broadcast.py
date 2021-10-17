@@ -14,7 +14,7 @@ from pyrogram.errors import (
     UserIsBlocked,
 )
 
-from Config import BROADCAST_AS_COPY
+BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST", True))
 
 broadcast_ids = {}
 
