@@ -25,7 +25,6 @@ Pikachu = ["https://telegra.ph/file/b5a11192ecd411b479494.jpg",
 
 
 
-
 @Client.on_message(filters.command("start"))
 async def start(bot, cmd):
     usr_cmdall1 = cmd.text
