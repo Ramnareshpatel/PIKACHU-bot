@@ -57,7 +57,7 @@ async def answer(bot, query):
                 reply_markup=reply_markup))
 
     if results:
-        switch_pm_text = f"Bruda Here Is All Files 😎"
+        switch_pm_text = f"Here Is All Files 😎"
         if string:
             switch_pm_text += f" For {string}"
 
@@ -76,7 +76,7 @@ async def answer(bot, query):
                            switch_pm_parameter="error")
     else:
 
-        switch_pm_text = f'He He Bruda No Results 🤓'
+        switch_pm_text = f'He He No Results 🤓'
         if string:
             switch_pm_text += f' For "{string}"'
 
