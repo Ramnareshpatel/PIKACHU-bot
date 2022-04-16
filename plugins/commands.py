@@ -9,19 +9,19 @@ from pyrogram.errors import UserNotParticipant
 from database import Database
 logger = logging.getLogger(__name__)
 
-Pikachu = ["https://telegra.ph/file/b5a11192ecd411b479494.jpg",
-           "https://telegra.ph/file/d0d3199a7e79967dd4003.jpg",
-           "https://telegra.ph/file/165e8d2680ba76017b1ed.jpg",
-           "https://telegra.ph/file/6ae796f3eb6ad20d2811e.jpg",
-           "https://telegra.ph/file/2bcbd85d929bb64416056.png",
-           "https://telegra.ph/file/9c7136ab7ccdce8eee37b.jpg",
-           "https://telegra.ph/file/64c5e09cfacef17123cb7.jpg",
-           "https://telegra.ph/file/7592ed90b9a674c5e20ad.jpg",
-           "https://telegra.ph/file/fd977dbd95f461917591f.jpg",
-           "https://telegra.ph/file/817cf03ebd738f066f84b.jpg",
-           "https://telegra.ph/file/3aad3d4ce42d964223f2f.jpg",
-           "https://telegra.ph/file/dfebd4207f9d5d7f7151a.jpg",
-           "https://telegra.ph/file/8fe7bec6cc6245d8fb45e.jpg"]
+Pikachu = ["https://telegra.ph/file/0dffd7381e3b3c4f6e08f.jpg",
+           "https://telegra.ph/file/510985728b633ebbb71d0.jpg",
+           "https://telegra.ph/file/bdb5db81985f0b896bb80.jpg",
+           "https://telegra.ph/file/b4f803331e770982f2931.jpg",
+           "https://telegra.ph/file/43508ab0a34dbc621e760.jpg",
+           "https://telegra.ph/file/0dffd7381e3b3c4f6e08f.jpg",
+           "https://telegra.ph/file/510985728b633ebbb71d0.jpg",
+           "https://telegra.ph/file/bdb5db81985f0b896bb80.jpg",
+           "https://telegra.ph/file/b4f803331e770982f2931.jpg",
+           "https://telegra.ph/file/bdb5db81985f0b896bb80.jpg",
+           "https://telegra.ph/file/b4f803331e770982f2931.jpg",
+           "https://telegra.ph/file/b4f803331e770982f2931.jpg",
+           "https://telegra.ph/file/510985728b633ebbb71d0.jpg"]
 
 
 
@@ -85,7 +85,7 @@ async def start(bot, cmd):
                     f_caption = f"{files.file_name}"
                 buttons = [[
 
-                       InlineKeyboardButton("🍿 𝙅𝙊𝙄𝙉 𝙊𝙐𝙍 𝙂𝙍𝙊𝙐𝙋 🍿", url="https://t.me/cineblasters"),
+                       InlineKeyboardButton("🍿 𝙅𝙊𝙄𝙉 𝙊𝙐𝙍 𝙂𝙍𝙊𝙐𝙋 🍿", url="https://t.me/Movies_4you"),
                     ]]
                 await bot.send_cached_media(
                     chat_id=cmd.from_user.id,
@@ -115,15 +115,15 @@ async def start(bot, cmd):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("➕ 𝐀𝐝𝐝 𝐌𝐞 𝐓𝐨 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩 ➕", url= "https://t.me/CB_movieRobot?startgroup=true")
+                        InlineKeyboardButton("➕ 𝐀𝐝𝐝 𝐌𝐞 𝐓𝐨 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩 ➕", url= "https://t.me/Mafia_AutoFilter_V3_Bot?startgroup=true")
                     ],
                     [
                         InlineKeyboardButton("𝙎𝙚𝙖𝙧𝙘𝙝 𝙝𝙚𝙧𝙚🔎", switch_inline_query_current_chat=''),
-                        InlineKeyboardButton("𝘼𝙣𝙮 𝙃𝙚𝙡𝙥 💡", url="telegram.me/STMbOTsUPPORTgROUP")
+                        InlineKeyboardButton("𝘼𝙣𝙮 𝙃𝙚𝙡𝙥 💡", url="telegram.me/Movies_4you")
                     ],
                     [
-                        InlineKeyboardButton("𝙈𝙮 𝘿𝙚𝙫 🔥", url="https://t.me/peace_fighter_TG"),
-                        InlineKeyboardButton("𝙈𝙮 𝘿𝙚𝙫 2🔥", url="https://t.me/VAMPIRE_KING_NO_1")
+                        InlineKeyboardButton("𝙈𝙮 𝘿𝙚𝙫 🔥", url="https://t.me/KingOf_univers"),
+                        InlineKeyboardButton("𝙐𝙥𝙙𝙖𝙩𝙚𝙯 🤓", url="https://t.me/Movies4youbackup")
                     ],
                     [
                         InlineKeyboardButton("𝘼𝙗𝙤𝙪𝙩 😎", callback_data="about")
